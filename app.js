@@ -6,7 +6,7 @@ const helmet = require('helmet');
 // const logger = require('./logger');
 const routers = require('./apis/user');
 const adminRouters = require('./apis/admin');
-const kakaoPassport = require('./passport');
+// const kakaoPassport = require('./passport');
 const bodyParser = require('body-parser');
 const swaggerUi = require('swagger-ui-express');
 const swaggerFile = require('./swagger-output');
@@ -46,16 +46,15 @@ sequelize
     console.error(err);
   });
 
-kakaoPassport(app); // 카카오 소셜로그인 연결
+// kakaoPassport(app); // 카카오 소셜로그인 연결
 
 // CORS
 const corsOption = {
   origin: [
     'http://localhost:3000',
-    'http://3.39.254.117:3000',
     '*',
-    'https://wepool.co.kr',
-    'https://www.wepool.co.kr',
+    // 'https://wepool.co.kr',
+    // 'https://www.wepool.co.kr',
   ],
   credentials: true,
 };
