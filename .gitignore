@@ -1,0 +1,11 @@
+# Folder
+node_modules
+
+# ENV
+.env
+
+# SSL Info
+.well-known
+ca_bundle.crt
+certificate.crt
+private.key
